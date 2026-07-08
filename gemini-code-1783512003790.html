@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ice Cream Shop</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6e3;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ff6f91;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Promo Banner */
+        .promo-banner {
+            background-color: #ffc75f;
+            color: #d63447;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main Content Padding */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Section Headers */
+        h2 {
+            color: #d63447;
+            border-bottom: 2px solid #ff6f91;
+            padding-bottom: 5px;
+        }
+
+        /* Ice Cream Grid */
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        /* Individual Ice Cream Card */
+        .ice-cream-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .ice-cream-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+        .ice-cream-card h3 {
+            color: #ff6f91;
+            margin: 10px 0 5px 0;
+        }
+        .ice-cream-type {
+            font-style: italic;
+            color: #777;
+            font-size: 14px;
+        }
+        .ice-cream-info {
+            padding: 0 15px;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #845ec2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#quality">Quality</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 20% Off Promotion -->
+    <div class="promo-banner">
+        🎉 Grand Opening Special: Get 20% OFF all Ice Creams this weekend! 🎉
+    </div>
+
+    <div class="container">
+        
+        <!-- Quality Section -->
+        <section id="quality">
+            <h2>Our Quality Promise</h2>
+            <p>We believe in using only the finest, locally sourced ingredients. Our ice cream is churned daily to ensure the perfect, creamy texture you love. No artificial colors, just pure, delicious flavor!</p>
+        </section>
+
+        <!-- Ice Cream Menu Section -->
+        <section id="menu">
+            <h2>Our Flavors</h2>
+            <div class="menu-grid">
+                
+                <!-- Ice Cream 1 -->
+                <div class="ice-cream-card">
+                    <!-- Replace the src URL with your actual image later -->
+                    <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=400" alt="Strawberry Swirl Ice Cream">
+                    <h3>Strawberry Swirl</h3>
+                    <p class="ice-cream-type">Type: Dairy & Fresh Fruit</p>
+                    <p class="ice-cream-info">Classic vanilla bean ice cream swirled with ribbons of homemade fresh strawberry jam.</p>
+                </div>
+
+                <!-- Ice Cream 2 -->
+                <div class="ice-cream-card">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c8e9e5cb?w=400" alt="Chocolate Fudge Ice Cream">
+                    <h3>Double Chocolate Fudge</h3>
+                    <p class="ice-cream-type">Type: Premium Dairy</p>
+                    <p class="ice-cream-info">Rich, dark chocolate ice cream loaded with thick, chewy fudge pieces.</p>
+                </div>
+
+                <!-- Ice Cream 3 -->
+                <div class="ice-cream-card">
+                    <img src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?w=400" alt="Mango Sorbet">
+                    <h3>Tropical Mango</h3>
+                    <p class="ice-cream-type">Type: Vegan Sorbet</p>
+                    <p class="ice-cream-info">A refreshing, dairy-free treat made with 100% real Alphonso mangoes.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our family-owned ice cream parlor! We have been dreaming of opening this shop for years, bringing sweet smiles and delicious scoops to our wonderful community.</p>
+        </section>
+
+    </div>
+
+    <!-- Footer with Contact and Address -->
+    <footer id="contact">
+        <h3>Visit Us!</h3>
+        <p><strong>Address:</strong> 123 Sweet Tooth Lane, Dessert City, DC 56789</p>
+        <p><strong>Contact Number:</strong> (555) 123-4567</p>
+        <p>Open Monday to Sunday: 11:00 AM - 10:00 PM</p>
+    </footer>
+
+</body>
+</html>
